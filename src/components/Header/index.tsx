@@ -1,7 +1,7 @@
 import { FiPlusSquare } from "react-icons/fi";
 
 import { Container } from "./styles";
-// import Logo from ;
+import Logo from "../../assets/logo.svg";
 
 interface HeaderProps {
   openModal: () => void;
@@ -13,7 +13,7 @@ function Header(props: HeaderProps) {
   return (
     <Container>
       <header>
-        <img src="../../assets/logo.svg" alt="GoRestaurant" />
+        <img src={Logo} alt="GoRestaurant" />
         <nav>
           <div>
             <button type="button" onClick={openModal}>
